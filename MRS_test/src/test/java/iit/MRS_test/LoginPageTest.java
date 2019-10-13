@@ -34,6 +34,7 @@ public class LoginPageTest extends MRS_TestBase {
 	LoginPage loginPage = new LoginPage(driver);
 	String expected_heading = "Logged in as Super User () at Inpatient Ward.";
 	String actual_heading = loginPage.verifyPageHeading();
+	System.out.println("Executing second test case");
 	sa.assertEquals(actual_heading, expected_heading,"The page heading doesnot match");
 	}
 	
@@ -43,6 +44,7 @@ public class LoginPageTest extends MRS_TestBase {
 		LoginPage loginPage = new LoginPage(driver);
 		String expected_heading = " Find Patient Record ";
 		String actual_heading = loginPage.clickFindPatient();
+		System.out.println("Executing third test case");
 		sa.assertEquals(actual_heading, expected_heading,"The page heading doesnot match");
 		
 		
