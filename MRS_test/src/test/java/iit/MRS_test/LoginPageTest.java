@@ -23,6 +23,7 @@ public class LoginPageTest extends MRS_TestBase {
 		loginPage.login("Admin","Admin123");
 		String expected_title ="Home";
 		String actual_title = loginPage.verifyTitle();
+		System.out.println("Executing first test case");
 		sa.assertEquals(actual_title,expected_title,"The Title doesnot match");		
 	}
 
